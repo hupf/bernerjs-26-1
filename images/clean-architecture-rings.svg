@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400"
+   height="400"
+   viewBox="0 0 105.83334 105.83334"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="clean-architecture-rings.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.1825"
+     inkscape:cx="200.45819"
+     inkscape:cy="200.2291"
+     inkscape:window-width="2560"
+     inkscape:window-height="1440"
+     inkscape:window-x="4480"
+     inkscape:window-y="-24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-13.229168,-13.229168)">
+    <circle
+       style="fill:#5eccff;fill-opacity:1;stroke-width:0.83806;stroke-linecap:round"
+       id="circle3511"
+       cx="66.145836"
+       cy="66.145836"
+       r="52.916668" />
+    <circle
+       style="fill:#5effb5;fill-opacity:1;stroke-width:0.628545;stroke-linecap:round"
+       id="circle2897"
+       cx="66.145836"
+       cy="66.145836"
+       r="39.6875" />
+    <circle
+       style="fill:#ff7c5e;fill-opacity:1;stroke-width:0.41903;stroke-linecap:round"
+       id="path31-3"
+       cx="66.145836"
+       cy="66.145836"
+       r="26.458334" />
+    <circle
+       style="fill:#ffbb5e;fill-opacity:1;stroke-width:0.209515;stroke-linecap:round"
+       id="path31"
+       cx="66.145836"
+       cy="66.145836"
+       r="13.229167" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.115692"
+       y="48.111366"
+       id="text32601"><tspan
+         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="66.115692"
+         y="48.111366"
+         id="tspan32599">Use Cases</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="79.434441"
+       y="19.185919"
+       id="text39303"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         x="66.069183"
+         y="19.185919"><tspan
+           style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="66.069183"
+           y="19.185919"
+           id="tspan57623">Frameworks</tspan></tspan><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         x="66.069183"
+         y="23.595644">&amp; Drivers</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.069183"
+       y="34.531757"
+       id="text1"><tspan
+         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="66.069183"
+         y="34.531757"
+         id="tspan1">Adapters</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.115692"
+       y="67.161369"
+       id="text2"><tspan
+         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="66.115692"
+         y="67.161369"
+         id="tspan2">Entities</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.396875;stroke-dasharray:1.5875, 0.396875;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 40.384572,104.87866 60.751126,73.84391"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
