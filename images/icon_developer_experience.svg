@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .75px;
+      }
+
+      .cls-2 {
+        fill: #3b7bbe;
+      }
+    </style>
+    <symbol id="bg_bright_navy_blue" viewBox="0 0 19 19">
+      <circle class="cls-2" cx="9.5" cy="9.5" r="9.5"/>
+    </symbol>
+  </defs>
+  <g id="bg_bright_navy_blue-2" data-name="bg_bright_navy_blue">
+    <use width="19" height="19" transform="translate(.5 .5)" xlink:href="#bg_bright_navy_blue"/>
+  </g>
+  <g id="icons_white">
+    <g>
+      <path class="cls-1" d="M5.28,12.38c0,.71.57,1.28,1.28,1.28s1.28-.57,1.28-1.28-.57-1.28-1.28-1.28-1.28.57-1.28,1.28Z"/>
+      <path class="cls-1" d="M8.63,15.5c-.4-1.14-1.64-1.74-2.79-1.35-.63.22-1.13.71-1.35,1.35"/>
+      <path class="cls-1" d="M8.53,8.9v1.1l-1.47-1.1h-1.83c-.4,0-.73-.33-.73-.73h0v-2.93c0-.4.33-.73.73-.73h4.03"/>
+      <path class="cls-1" d="M5.97,6.7l.73.73,1.83-1.47"/>
+      <path class="cls-1" d="M12.15,12.38c0,.71.57,1.28,1.28,1.28s1.28-.57,1.28-1.28-.57-1.28-1.28-1.28-1.28.57-1.28,1.28Z"/>
+      <path class="cls-1" d="M11.37,15.5c.4-1.14,1.64-1.74,2.79-1.35.63.22,1.13.71,1.35,1.35"/>
+      <path class="cls-1" d="M10.73,10h.37v1.1l1.47-1.1h2.2c.4,0,.73-.33.73-.73v-2.93c0-.4-.33-.73-.73-.73h-4.03c-.4,0-.73.33-.73.73v2.93c0,.4.33.73.73.73Z"/>
+      <path class="cls-1" d="M13.67,8.53l-1.83-1.47"/>
+      <path class="cls-1" d="M11.83,8.53l1.83-1.47"/>
+    </g>
+  </g>
+</svg>

@@ -21,7 +21,8 @@ duration: 35min
 # Moderne TypeScript-Backends <span class="highlight">mit Nitro & Clean Architecture</span>
 
 Bärner JS Talks #26-1, 03.03.2026 \
-Mathis Hofer, hofer@puzzle.ch
+Mathis Hofer \
+hofer@puzzle.ch
 
 ---
 layout: center
@@ -40,14 +41,9 @@ transition: slide-up
 level: 3
 ---
 
-<img src="./images/edk.svg" class="mx-auto mt-20 mb-12" style="height: 110px;">
+<img src="./images/edk.svg" class="mx-auto mt-18" style="height: 110px;">
 
-```mermaid
-flowchart TD
-    iuv["<strong>IUV</strong><br><span style='margin-top: 0.5rem; font-size: 0.8em; line-height: 1.3; display: block'>Interkantonale Universitätsvereinbarung</span>"]
-    fhv["<strong>FHV</strong><br><span style='margin-top: 0.5rem; font-size: 0.8em; line-height: 1.3; display: block'>Interkantonale Fachhochschulvereinbarung</span>"]
-    hfsv["<strong>HFSV</strong><br><span style='margin-top: 0.5rem; font-size: 0.8em; line-height: 1.3; display: block'>Interkantonale Vereinbarung über Beiträge an die Bildungsgänge der höheren Fachschulen</span>"]
-```
+<img src="./images/hochschulabkommen.svg" class="mx-auto mt-14">
 
 <!--
 - Bildung in der Schweiz Kantonal geregelt (ausser ETH/EPFL)
@@ -103,6 +99,611 @@ level: 3
 - Beteiligung an Weiterentwicklungen, neue Features stehen allen zur Verfügung
 - Aufteilung der Kosten anteilig
 -->
+
+---
+layout: meet
+transition: slide-up
+level: 3
+---
+
+# Nice to meet you
+
+::members::
+
+<div>
+  <img src="./images/Hofer_Mathis.webp" alt="Mathis Hofer">
+
+Mathis Hofer
+
+Software Engineer & Architect, \
+Member of the Technical Board \
+hofer@puzzle.ch
+
+</div>
+
+---
+layout: agenda
+transition: slide-left
+---
+
+# Agenda
+
+<Toc minDepth="2" maxDepth="2" />
+
+---
+layout: intro
+transition: slide-up
+level: 2
+---
+
+# REST Backend <span class="highlight">mit Nitro</span>
+
+---
+transition: slide-up
+level: 3
+---
+
+# Building Blocks
+
+<div style="transform: scale(0.7); transform-origin: top left;">
+
+```mermaid
+flowchart TB
+  subgraph CORDEX
+    frontend[Frontend]
+    backend[Backend]
+    worker[Worker]
+    db[(Database)]
+    storage[(Object Storage)]
+
+    frontend -- "HTTP" --> backend
+    backend -- "SQL" --> db
+    backend -- "HTTP" --> storage
+    worker -- "SQL" --> db
+    worker -- "HTTP" --> storage
+
+end
+
+controller((👩‍💻<br>Controller))
+user((👨‍💻<br>Read-only))
+iam[IAM]
+ers[ERS]
+enfinio[Enfinio]
+
+controller -- "HTTP" --> frontend
+user -- "HTTP" --> frontend
+backend -- "OAuth" --> iam
+backend -.-> enfinio
+worker -.-> enfinio
+frontend -- "Link" --> ers
+```
+
+</div>
+
+---
+transition: slide-up
+level: 3
+---
+
+# Wieso SPA + REST API?
+
+<div class="reasons mt-10">
+
+  <div>
+    <img src="./images/icon_arbeitsplatz_1.svg">
+    <div>Interne<br>Businessapplikation</div>
+  </div>
+
+  <div>
+    <img src="./images/icon_anstellugsdauer.svg">
+    <div>Lange Session-Zeiten</div>
+  </div>
+
+  <div>
+    <img src="./images/icon_developer_experience.svg">
+    <div>Gemischte Erfahrungen<br>mit RSCs</div>
+  </div>
+
+  <div>
+    <img src="./images/icon_sicherheitsintegration.svg">
+    <div>Unbekannte<br>Betriebsumgebungen</div>
+  </div>
+
+  <div>
+    <img src="./images/icon_metriken-visualisierung.svg">
+    <div>Externe<br>Weiterverarbeitung</div>
+  </div>
+
+  <div>
+    <img src="./images/icon_architektur.svg">
+    <div>Etablierte Architektur</div>
+  </div>
+
+</div>
+
+<style>
+  .reasons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .reasons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  img {
+    height: 100px;
+  }
+</style>
+
+<!--
+- Nicht öffentliche Businessapplikation \
+  → Nur von Sachbearbeiter:innen verwendet
+- Lange Session-Zeiten \
+  → First Contentful Paint ist nicht kritisch
+- Gemischte Erfahrungen mit Next.js und RSC/Server Actions
+- Unbekannte Betriebsumgebungen bei den Kantonen \
+  → Potentiell Probleme mit RSC Protokoll durch Proxies, WAFs, etc.
+- Externe Weiterbearbeitung der Daten \
+  → API erwünscht
+- Architektur die wir gut kennen
+-->
+
+---
+layout: full
+transition: slide-up
+level: 3
+---
+
+<img src="./images/frameworks-wordcloud.svg" class="mx-auto" style="height: 100%">
+
+<!--
+- Viele Wege führen nach Rom...
+- Unzählige Server & Web Frameworks für JavaScript Runtimes
+- Express Standard noch vor ein paar Jahren
+- Von minimalen Server Toolkits (Express) bis zu Full-fledged Web Frameworks (NestJS, AdonisJS) à la Ruby on Rails
+- Nitro als moderner Mittelweg
+-->
+
+---
+transition: slide-up
+level: 3
+hide: true
+---
+
+# Tech Stack
+
+<div class="flex gap-12" style="font-size: 0.8em">
+
+<div>
+
+#### Allgemein
+
+- **PostgreSQL**
+- S3-compatible **Object Storage**
+- 100% **TypeScript**
+- PNPM Workspace <span class="opacity-50">– Package manager & monorepo tool</span>
+- Zod <span class="opacity-50">– Schema validation</span>
+- Vitest <span class="opacity-50">– Unit & integration tests</span>
+- ESLint <span class="opacity-50">– Linting</span>
+- Prettier <span class="opacity-50">– Opiniated code formater</span>
+- Kubernetes + Helm <span class="opacity-50">– Containerized deployment</span>
+- GlitchTip <span class="opacity-50">– Error tracking</span>
+
+</div>
+
+<div>
+
+#### Frontend
+
+- Vite
+- **React** <span class="opacity-50">– Frontend framework</span>
+- TanStack Router <span class="opacity-50">– Client-side routing</span>
+- TanStack Query <span class="opacity-50">– Data fetching</span>
+- Carbon Design System <span class="opacity-50">– Component framework</span>
+- Tailwind <span class="opacity-50">– Utility-first CSS framework</span>
+
+#### Backend
+
+- **Nitro**/H3 <span class="opacity-50">– Server toolkit</span>
+- Kysely <span class="opacity-50">– Typesafe SQL query builder</span>
+- FlyDrive <span class="opacity-50">– S3-compatible storage library</span>
+- Brandi <span class="opacity-50">– Dependency injection</span>
+- Arctic <span class="opacity-50">– Authentication</span>
+- Graphile Worker <span class="opacity-50">– Asynchronous job queue</span>
+
+</div>
+
+</div>
+
+<style>
+  ul {
+    list-style-type: none;
+  }
+  h4 + ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  h4 {
+    margin-bottom: 0.5em;
+  }
+  ul + h4 {
+    margin-top: 1.5em;
+  }
+</style>
+
+---
+layout: iframe-right
+url: https://nitro.build/
+transition: slide-up
+level: 3
+---
+
+# Nitro
+
+- **TypeScript-native**
+- **Runtime-agnostisch** \
+  (Node.js, Deno, Bun, Edge, Serverless)
+- Basiert auf H3 https://h3.unjs.io/
+- **Zero Config Setup** \
+  (Dev Server mit HMR, kompakter Build)
+- **File-based Routing**
+- Plugins & Middlewares
+- Schöne Error Page bei Exceptions
+- Auto Imports
+- **Minimal, trotzem _(Some) Batteries Included™_**
+
+https://nitro.build/
+
+---
+layout: iframe-right
+url: https://unjs.io/relations?u[]=automd&u[]=bundle-runner&u[]=c12&u[]=changelogen&u[]=citty&u[]=confbox&u[]=consola&u[]=cookie-es&u[]=crossws&u[]=db0&u[]=defu&u[]=destr&u[]=fontaine&u[]=fs-memo&u[]=get-port-please&u[]=giget&u[]=h3&u[]=hookable&u[]=httpxy&u[]=image-meta&u[]=ipx&u[]=jimp-compact&u[]=jiti&u[]=knitwork&u[]=listhen&u[]=magic-regexp&u[]=magicast&u[]=mdbox&u[]=mkdist&u[]=mlly&u[]=mongoz&u[]=nanotar&u[]=nitropack&u[]=node-fetch-native&u[]=nypm&u[]=ofetch&u[]=ohash&u[]=pathe&u[]=perfect-debounce&u[]=pkg-types&u[]=radix3&u[]=rc9&u[]=scule&u[]=serve-placeholder&u[]=std-env&u[]=theme-colors&u[]=ufo&u[]=unbuild&u[]=uncrypto&u[]=unctx&u[]=undocs&u[]=unenv&u[]=unhead&u[]=unimport&u[]=unpdf&u[]=unplugin&u[]=unstorage&u[]=untun&u[]=untyped&u[]=unwasm&u[]=uqr&u[]=webpackbar&showDependencies=false&showDevDependencies=false&showChildren=false
+transition: slide-up
+level: 3
+---
+
+# Nitro, Nuxt und das UnJS Ökosystem
+
+<span class="opacity-50 prose-sm" style="line-height: 0.8">November 2020</span> \
+Initiale Arbeiten an «Nuxt Nitro» (bzw. H3) durch Pooya Parsa
+
+<span class="opacity-50 prose-sm" style="line-height: 0.8">März 2021</span> \
+UnJS Organisation auf GitHub
+
+<span class="opacity-50 prose-sm" style="line-height: 0.8">November 2022</span> \
+[Nuxt 3.0 mit Nitro](https://nuxt.com/blog/nuxt3-rc) als Server Engine
+
+<span class="opacity-50 prose-sm" style="line-height: 0.8">Juni 2025</span> \
+Nuxt 5.0 mit Nitro v3 und H3 v2 [angekündigt](https://nuxt.com/blog/roadmap-v4)
+
+<span class="opacity-50 prose-sm" style="line-height: 0.8">Juli 2025</span> \
+Nuxt(-Labs), Nitro (und Pooya Parsa) [von Vercel übernommen](ttps://vercel.com/blog/nuxtlabs-joins-vercel)
+
+---
+transition: slide-up
+level: 3
+---
+
+# Nitro/H3 als Basis für Meta Frameworks
+
+<div class="meta-frameworks mt-10">
+
+  <div>
+    <img src="./images/nuxt.svg">
+    <div>Nuxt <div class="framework">Vue</div></div>
+  </div>
+
+  <div>
+    <img src="./images/analog.svg">
+    <div>Analog <div class="framework">Angular</div></div>
+  </div>
+
+  <div>
+    <img src="./images/tanstack.png">
+    <div>TanStack Start <div class="framework">React/Solid</div></div>
+  </div>
+
+  <div>
+    <img src="./images/solid.svg">
+    <div>SolidStart <div class="framework">Solid</div></div>
+  </div>
+
+  <div>
+    <img src="./images/vinxi.png">
+    <div>Vinxi <div class="framework">Full Stack Framework SDK</div></div>
+  </div>
+
+</div>
+
+<style>
+  .meta-frameworks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .meta-frameworks > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .framework {
+    font-size: 0.8em;
+    opacity: 0.5;
+  }
+
+  img {
+    height: 100px;
+  }
+</style>
+
+<!--
+→ Es gibt eine Community und ein Interesse an der Weiterentwicklung von Nitro.
+-->
+
+---
+transition: slide-up
+level: 3
+---
+
+# Nitro Build
+
+Basierend auf Rollup (Nitro v2) bzw. Vite (Nitro v3)
+
+Bundled und treeshaked den Server Code inkl. Dependencies:
+
+```
+$ nitro build
+...
+$ node .output/server/index.mjs
+```
+
+→ 🚀 `.output/` Directory in einen Node Container kopieren und los... \
+→ ⚡️ Schnelle Cold Starts \
+→ 😃 Keine `node_modules` in der Produktion!
+
+---
+transition: slide-up
+level: 3
+---
+
+# Nitro Runtime Features
+
+- Cache <span class="opacity-50">– Route- & Function-level Caching</span>
+- KV Storage <span class="opacity-50">– Key-Value Storage mit verschiedenen Drivers wie Reddis, MongoDB</span>
+- WebSocket
+- `$fetch` <span class="opacity-50">– für interne & externe Abfragen</span>
+
+Experimental:
+
+- SQL Database <span class="opacity-50">– einfacher DB Layer</span>
+- Tasks <span class="opacity-50">– rudimentäre Task-Runtime</span>
+- OpenAPI <span class="opacity-50">– Swagger-basierte API Doku</span>
+
+---
+layout: iframe-right
+url: https://v3.nitro.build/
+level: 3
+---
+
+# Nitro v3
+
+- **Vite-basiert (Nitro v3 ist ein Vite Plugin)**
+- Renderer mit rendu Hypertext Preprocessor
+- Integration von weiteren Frameworks neben H3, wie Hono oder Elysia
+- React Server Components Support
+- ...
+
+---
+layout: intro
+transition: slide-up
+level: 2
+---
+
+# <div>Clean Architecture</div> <div>für <span class="highlight">pragmatische TypeScripters</span></div>
+
+---
+layout: image-right
+image: ./images/clean-architecture-rings.svg
+transition: slide-up
+level: 3
+---
+
+# Was ist Clean Architecture?
+
+- Kombiniert Prinzipien aus _Hexagonal Architecture_ und _Onion Architecture_
+- **Separation of Concerns**
+- Dependency Rule: **Abhängikeiten nur von aussen gegen innen** \
+  <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
+
+---
+layout: quote
+transition: fade
+level: 3
+class: text-center
+---
+
+# Clean Architecture != Less Code
+
+---
+transition: slide-up
+level: 3
+---
+
+<img src="/images/clean-architecture.svg" alt="Clean Architecture" style="height: 100%; width: auto; margin: 0 auto; display: block;">
+
+---
+transition: slide-up
+level: 3
+---
+
+# Monorepo Packages & Dependencies
+
+<div style="transform: scale(0.55); transform-origin: top center;">
+
+```mermaid
+flowchart TD
+  subgraph "CORDEX"
+    client --> common
+    server --> common
+    worker --> common
+    use-cases --> common
+    db --> common
+
+    server --> use-cases
+    worker --> use-cases
+
+    use-cases --> db
+    use-cases --> storage
+
+    client -.-> |REST API| server
+    server -.-> |Graphile Worker Utils| worker
+end
+
+postgres[(Database)]
+db -.-> |Kysely| postgres
+worker -.-> |Graphile Worker| postgres
+
+s3[(Object Storage)]
+storage -.-> |Flydrive| s3
+```
+
+</div>
+
+---
+transition: slide-up
+level: 3
+---
+
+# Model
+
+<<< @/snippets/model.ts
+
+---
+transition: slide-up
+level: 3
+---
+
+# Controller
+
+<<< @/snippets/route-handler.ts
+
+---
+transition: slide-up
+level: 3
+---
+
+# Service
+
+<<< @/snippets/service.ts
+
+---
+transition: slide-up
+level: 3
+---
+
+# Repository
+
+<div style="transform: scale(0.8); transform-origin: top left;">
+
+<<< @/snippets/repository.ts
+
+</div>
+
+---
+layout: quote
+transition: slide-up
+level: 3
+---
+
+# But wait...
+
+---
+transition: slide-up
+level: 3
+---
+
+# Service
+
+<<< @/snippets/service.ts {3,7,14}
+
+---
+transition: slide-up
+level: 3
+---
+
+# Repository
+
+<div style="transform: scale(0.8); transform-origin: top left;">
+
+<<< @/snippets/repository.ts {2,14}
+
+</div>
+
+---
+transition: slide-up
+level: 3
+---
+
+<div style="transform: scale(0.7); transform-origin: top center;">
+
+```mermaid
+mindmap
+  root((Clean Architecture))
+    Frameworks & Drivers
+      Infrastructure
+    Interface Adapters
+      Output Ports
+      Adapters
+      Controllers
+      Repositories
+      Gateways
+      Presenters
+        ViewModels
+    Use Cases
+      Input Ports
+      Services
+      Interactors
+        DTOs
+    Entities
+      Entity Models
+```
+
+</div>
+
+---
+layout: quote
+transition: fade
+level: 3
+class: text-center
+---
+
+# It is a trade-off...
+
+---
+layout: quote
+transition: fade
+level: 3
+class: text-center
+---
+
+# 🤔 Clean Architecture?
+
+---
+layout: quote
+level: 3
+class: text-center
+---
+
+# Clean Architecture Spirit!
 
 ---
 layout: end
