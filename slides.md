@@ -103,6 +103,8 @@ level: 3
 
 <img src="./images/pmpc_logo_horizontal.jpg" alt="Public Money Public Code">
 
+<div style="position: absolute; bottom: 0.5em; font-size: 0.5em; opacity: 0.3;">CC BY-SA 4.0 publiccode.eu</div>
+
 <!--
 - Veröffentlichung unter Open Source Lizenz
 - CORDEX-Community: Nutzung durch weitere Kantone
@@ -865,7 +867,7 @@ layout: end
 # Merci!
 
 Fragen? \
-Slides: [github.com/hupf/bernerjs-26-1](https://github.com/hupf/bernerjs-26-1) \
+Slides: [github.com/hupf/bernerjs-26-1](https://github.com/hupf/bernerjs-26-1) <span class="text-xs">(CC BY-SA 4.0)</span> \
 \
 <span class="social"><img src="./images/icon_Mastodon.svg" alt="Mastodon"> <span>[@hupf@tooting.ch](https://tooting.ch/@hupf)</span></span><span class="social"><img src="./images/icon_bluesky.svg" alt="Bluesky"> <span>[@hupf.bsky.social](https://bsky.app/profile/hupf.bsky.social)</span></span>
 
