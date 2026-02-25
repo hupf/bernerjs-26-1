@@ -107,7 +107,6 @@ level: 3
 - Veröffentlichung unter Open Source Lizenz
 - CORDEX-Community: Nutzung durch weitere Kantone
 - Beteiligung an Weiterentwicklungen, neue Features stehen allen zur Verfügung
-- Aufteilung der Kosten anteilig
 - Dies der Kontext des Talks (Erfahrungsbericht)
 -->
 
@@ -131,6 +130,16 @@ Member of the Technical Board \
 hofer@puzzle.ch
 
 </div>
+
+<!--
+- Softwareentwickler bei Puzzle
+- Webentwicklung seit ca. 25 Jahren
+- Frontend-affin (Vertretung im Tech Board)
+- Full Stack
+  - Python/Django
+  - Ruby on Rails
+  - TypeScript
+-->
 
 ---
 layout: agenda
@@ -674,6 +683,11 @@ level: 3
 
 <<< @/snippets/model.ts
 
+<!--
+- Unser Domain Model = Zod Schemas
+- TypeScript Type abgeleitet (gleicher Name)
+-->
+
 ---
 transition: slide-up
 level: 3
@@ -685,6 +699,13 @@ level: 3
 
 <<< @/snippets/route-handler.ts
 
+<!--
+- Controller = meistens Route Handler → wenn grösser eigene Klasse
+- Auslesen von Query Params, Request Body etc.
+- Use Case über DI
+- Custom Route Handlers: Authorization & Validierung (Type-safe!)
+-->
+
 ---
 transition: slide-up
 level: 3
@@ -695,6 +716,11 @@ level: 3
 <img src="./images/clean-architecture-rings-usecases.svg" class="rings">
 
 <<< @/snippets/service.ts
+
+<!--
+- Trivial in diesem Beispiel
+- Oft mehr Applikationslogik, mehrere Repositories etc.
+-->
 
 ---
 transition: slide-up
@@ -711,13 +737,18 @@ level: 3
 
 </div>
 
+<!--
+- Datenbank Zugriff mit Kysely (Type-safe SQL query builder)
+- `db` Instanz auch über DI injected
+-->
+
 ---
 layout: quote
 transition: slide-up
 level: 3
 ---
 
-# But wait...
+# Moment mal...
 
 ---
 transition: slide-up
@@ -729,6 +760,13 @@ level: 3
 <img src="./images/clean-architecture-rings-usecases.svg" class="rings">
 
 <<< @/snippets/service.ts {3,7,14}
+
+<!--
+- Repository Import zeigt in falsche Richtung!
+- Nur type-Import, betrifft Implmentation von Service nicht
+- Vernachlässigbare Koppelung
+- Interfaces möglich wenn nötig
+-->
 
 ---
 transition: slide-up
@@ -744,6 +782,13 @@ level: 3
 <<< @/snippets/repository.ts {2,14,25}
 
 </div>
+
+<!--
+- Kysely Types leaken nicht in andere Schichten
+- `toCamel` Type-safe von Snake Case zu Camel Case
+- Verwendung von Zod Types global (auch im Frontend!)
+- Nachteil Anpassung in ganzer App wenn DB Feld ändert → Vorteil!
+-->
 
 ---
 transition: slide-up
@@ -785,6 +830,11 @@ class: text-center
 
 # It is a trade-off...
 
+<!--
+- Schon Clean Architectur ist ein Trade-off
+- Gerade mit TypeScript: pragmatische Mini-Trade-offs möglich
+-->
+
 ---
 layout: quote
 transition: fade
@@ -801,6 +851,12 @@ class: text-center
 ---
 
 # Clean Architecture Spirit!
+
+<!--
+- Entkoppellung doch erreicht
+- Massiv weniger Boilerplate
+- Clean Architecture = Common Language (man kennt die Struktur mit Repositories & Services etc.)
+-->
 
 ---
 layout: end
