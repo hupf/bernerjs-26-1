@@ -809,6 +809,21 @@ layout: end
 # Merci!
 
 Fragen? \
-[github.com/hupf/bernerjs-26-1](https://github.com/hupf/bernerjs-26-1)
+Slides: [github.com/hupf/bernerjs-26-1](https://github.com/hupf/bernerjs-26-1) \
+\
+<span class="social"><img src="./images/icon_Mastodon.svg" alt="Mastodon"> <span>[@hupf@tooting.ch](https://tooting.ch/@hupf)</span></span><span class="social"><img src="./images/icon_bluesky.svg" alt="Bluesky"> <span>[@hupf.bsky.social](https://bsky.app/profile/hupf.bsky.social)</span></span>
 
 <PoweredBySlidev mt-10 />
+
+<style>
+  .social {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 0.3em;
+    align-items: center;
+  }
+  .social img {
+    width: 50px;
+  }
+
+</style>

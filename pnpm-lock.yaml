@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@puzzleitc/slidev-theme-puzzle':
-        specifier: ^1.1.0
-        version: 1.1.0(@nuxt/kit@3.21.1)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(yaml@2.8.2))
+        specifier: ^1.1.1
+        version: 1.1.1(@nuxt/kit@3.21.1)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(yaml@2.8.2))
       '@slidev/cli':
         specifier: ^52.12.0
         version: 52.12.0(@nuxt/kit@3.21.1)(@types/markdown-it@14.1.2)(@types/node@22.19.11)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)
@@ -430,8 +430,8 @@ packages:
   '@polka/url@1.0.0-next.29':
     resolution: {integrity: sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww==}
 
-  '@puzzleitc/slidev-theme-puzzle@1.1.0':
-    resolution: {integrity: sha512-lQnY8Ds6D+qjrTpCO6VjQQCXz1Jn3X993M25TCZ0xW3H/P6FzkpRJQ2Q7sFndgl+PJu1cg++j6SjbnWpFPHFUg==}
+  '@puzzleitc/slidev-theme-puzzle@1.1.1':
+    resolution: {integrity: sha512-safw2AeVTzFN4JCcf4Il/Pc55emTzWjftOwUxfTjDRCAnbYu1ocnO2SRx+RrROstB4Z6ecVaJVj1XXigVktSDg==}
     engines: {node: '>=18.0.0'}
 
   '@quansync/fs@1.0.0':
@@ -3065,7 +3065,7 @@ snapshots:
 
   '@polka/url@1.0.0-next.29': {}
 
-  '@puzzleitc/slidev-theme-puzzle@1.1.0(@nuxt/kit@3.21.1)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(yaml@2.8.2))':
+  '@puzzleitc/slidev-theme-puzzle@1.1.1(@nuxt/kit@3.21.1)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(yaml@2.8.2))':
     dependencies:
       '@slidev/types': 52.12.0(@nuxt/kit@3.21.1)(@vue/compiler-sfc@3.5.28)(markdown-it-async@2.2.0)(postcss@8.5.6)(typescript@5.9.3)(vite@7.3.1(@types/node@22.19.11)(jiti@2.6.1)(yaml@2.8.2))
     transitivePeerDependencies:
