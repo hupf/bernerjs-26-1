@@ -7,7 +7,7 @@
    viewBox="0 0 105.83334 105.83334"
    version="1.1"
    id="svg5"
-   sodipodi:docname="clean-architecture-rings.svg"
+   sodipodi:docname="clean-architecture-rings2.svg"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -138,5 +138,68 @@
        d="M 40.384572,104.87866 60.751126,73.84391"
        id="path2"
        sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="80.154037"
+       y="97.323853"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         x="66.115692"
+         y="97.323853"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="66.115692"
+           y="97.323853"
+           id="tspan3">Repositories</tspan></tspan><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         x="66.115692"
+         y="101.85619"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'">&amp; Gateways</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="66.115692"
+       y="90.973862"
+       id="text9"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="66.115692"
+         y="90.973862"
+         id="tspan9">Interfaces</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-23.552959"
+       y="102.4377"
+       id="text10"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-23.552959"
+         y="102.4377"
+         id="tspan10">Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-23.231373"
+       y="115.69472"
+       id="text11"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-23.231373"
+         y="115.69472"
+         id="tspan11">Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-22.645205"
+       y="129.40996"
+       id="text12"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-22.645205"
+         y="129.40996"
+         id="tspan12">Model</tspan></text>
   </g>
 </svg>

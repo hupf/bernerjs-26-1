@@ -24,7 +24,7 @@
      showgrid="false"
      inkscape:zoom="2.1825"
      inkscape:cx="200.45819"
-     inkscape:cy="200.2291"
+     inkscape:cy="206.18557"
      inkscape:window-width="1920"
      inkscape:window-height="1048"
      inkscape:window-x="0"
@@ -39,81 +39,83 @@
      id="layer1"
      transform="translate(-13.229168,-13.229168)">
     <circle
-       style="fill:#5eccff;fill-opacity:1;stroke-width:0.83806;stroke-linecap:round"
+       style="fill:#1e5a96;fill-opacity:1;stroke-width:0.83806;stroke-linecap:round"
        id="circle3511"
        cx="66.145836"
        cy="66.145836"
        r="52.916668" />
     <circle
-       style="fill:#5effb5;fill-opacity:1;stroke-width:0.628545;stroke-linecap:round"
+       style="fill:#46bcc0;fill-opacity:1;stroke-width:0.628545;stroke-linecap:round"
        id="circle2897"
        cx="66.145836"
        cy="66.145836"
        r="39.6875" />
     <circle
-       style="fill:#ff7c5e;fill-opacity:1;stroke-width:0.41903;stroke-linecap:round"
+       style="fill:#f07f4e;fill-opacity:1;stroke-width:0.41903;stroke-linecap:round"
        id="path31-3"
        cx="66.145836"
        cy="66.145836"
        r="26.458334" />
     <circle
-       style="fill:#ffbb5e;fill-opacity:1;stroke-width:0.209515;stroke-linecap:round"
+       style="fill:#face69;fill-opacity:1;stroke-width:0.209515;stroke-linecap:round"
        id="path31"
        cx="66.145836"
        cy="66.145836"
        r="13.229167" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="66.075729"
-       y="64.791054"
-       id="text6501"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="66.075729"
-         y="64.791054"
-         id="tspan20489">Models &amp;</tspan><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="66.075729"
-         y="69.200775"
-         id="tspan16809">Domain Logic</tspan></text>
+       style="font-weight:300;font-size:3.52778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#d38d5f;fill-opacity:1;stroke-width:0.897001"
+       x="66.083824"
+       y="60.298939"
+       id="text12"><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="60.298939"
+         id="tspan23">Zod</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="64.708664"
+         id="tspan24">Schemas</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="69.118385"
+         id="tspan15">&amp; Utility</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="73.528114"
+         id="tspan26">Functions</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="66.115692"
        y="47.582199"
        id="text32601"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="66.115692"
          y="47.582199"
          id="tspan32599">Services</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="66.132919"
-       y="32.395027"
-       id="text33171"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="66.132919"
-         y="32.395027"
-         id="tspan33169">Controllers</tspan><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="66.132919"
-         y="36.804752"
-         id="tspan55545">(Route Handlers)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="82.583199"
        y="-66.246559"
        id="text33171-3"
-       transform="rotate(66.770204)">Tasks</text>
+       transform="rotate(66.770204)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'"
+         id="tspan27">Tasks</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="72.011063"
-       y="-79.157814"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="75.164421"
+       y="-77.072517"
        id="text33171-3-9"
-       transform="rotate(66.770204)">Graphile Worker</text>
+       transform="rotate(65.342407)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'"
+         id="tspan28">Graphile Worker</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -121,7 +123,7 @@
        y="28.562632"
        id="text34967"
        transform="rotate(48.128049)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="93.649857"
          y="28.562632"
          id="tspan34965">Repositories</tspan></text>
@@ -132,7 +134,7 @@
        y="127.29321"
        id="text36073"
        transform="rotate(-50.778103)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="-8.6593637"
          y="127.29321"
          id="tspan36071">Gateways</tspan></text>
@@ -143,63 +145,79 @@
        y="58.999149"
        id="text37027"
        transform="rotate(-59.69611)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="-25.940617"
          y="58.999149"
          id="tspan37025">Presenters</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="66.069183"
        y="21.302588"
        id="text39303"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="66.069183"
          y="21.302588"
          id="tspan57623">Nitro/H3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="87.170425"
        y="17.658112"
        id="text40927"
        transform="rotate(63.403776)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="87.170425"
          y="17.658112"
          id="tspan40925">Postgres</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="89.610458"
        y="77.420761"
        id="text41739"
        transform="rotate(26.333496)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="89.610458"
          y="77.420761"
          id="tspan41737">S3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="17.395428"
        y="139.32375"
        id="text46043"
        transform="rotate(-33.735994)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="17.395428"
          y="139.32375"
          id="tspan46041">Enfinio API</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="-32.835091"
        y="134.4333"
        id="text46043-6"
        transform="rotate(-66.561399)"><tspan
-         style="font-size:3.52778px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
          x="-32.835091"
          y="134.4333"
          id="tspan46041-7">OAuth IdP</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:300;font-size:3.52778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#d38d5f;fill-opacity:1;stroke-width:0.897001"
+       x="66.083824"
+       y="31.723934"
+       id="text32"><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="31.723934"
+         id="tspan32">Controllers</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:3.52778px;line-height:1.25;fill:#000000;fill-opacity:1;stroke-width:0.897"
+         x="66.083824"
+         y="36.133659"
+         id="tspan35">(Route Handlers)</tspan></text>
   </g>
 </svg>

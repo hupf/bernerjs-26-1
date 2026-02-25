@@ -73,9 +73,19 @@ level: 3
 
 # Applikation: CORDEX
 
-→ **C**ontrolling, **R**eporting, **D**ata, **Ex**change
+**Co**ntrolling, **R**eporting, **D**ata, **Ex**change
 
-TODO: Screenshots der Applikation
+<div class="flex gap-12 mt-12">
+  <img src="./images/cordex-home.png" alt="CORDEX Startseite">
+  <img src="./images/cordex-manual.png" alt="CORDEX Manuelle Kontrolle">
+</div>
+
+<style>
+  img {
+    width: 45%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+</style>
 
 <!--
 Applikation für Kanton Aargau entwickelt:
@@ -98,6 +108,7 @@ level: 3
 - CORDEX-Community: Nutzung durch weitere Kantone
 - Beteiligung an Weiterentwicklungen, neue Features stehen allen zur Verfügung
 - Aufteilung der Kosten anteilig
+- Dies der Kontext des Talks (Erfahrungsbericht)
 -->
 
 ---
@@ -138,9 +149,14 @@ level: 2
 
 # REST Backend <span class="highlight">mit Nitro</span>
 
+<!--
+- Am Anfang stand die Frage: Was für eine Architektur?
+-->
+
 ---
 transition: slide-up
 level: 3
+hide: true
 ---
 
 # Building Blocks
@@ -179,6 +195,18 @@ frontend -- "Link" --> ers
 ```
 
 </div>
+
+---
+layout: center
+transition: slide-up
+level: 3
+---
+
+# Was für eine Architektur?
+
+<!--
+- Erst Umsetzung mit Next.js/RSC geplant, dann für SPA + REST API entschieden
+-->
 
 ---
 transition: slide-up
@@ -489,6 +517,26 @@ Experimental:
 - OpenAPI <span class="opacity-50">– Swagger-basierte API Doku</span>
 
 ---
+level: 3
+transition: slide-up
+---
+
+# File-based Routing
+
+`server/routes/hello/[name]/[age].ts`
+
+```typescript
+export default defineEventHandler((event) => {
+  const name = getRouterParam(event, "name");
+  const age = getRouterParam(event, "age");
+
+  return `Hello ${name}! You are ${age} years old.`;
+});
+```
+
+→ Use can use function composition!
+
+---
 layout: iframe-right
 url: https://v3.nitro.build/
 level: 3
@@ -513,6 +561,27 @@ level: 2
 ---
 layout: image-right
 image: ./images/clean-architecture-rings.svg
+transition: fade
+level: 3
+---
+
+# Was ist Clean Architecture?
+
+- Kombiniert Prinzipien aus _Hexagonal Architecture_ und _Onion Architecture_
+- **Separation of Concerns**
+- Dependency Rule: **Abhängikeiten nur von aussen gegen innen** \
+  <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
+
+<!--
+- Domain Model & Domain Logik im Zentrum
+- Anders als Layered Architectur wo Frameworks & Drivers die Basis sind: hier ganz aussen
+- Adapters Schicht zwischen neutraler Domain und Frameworks & Drivers
+- Dependency Rule
+-->
+
+---
+layout: image-right
+image: ./images/clean-architecture-rings2.svg
 transition: slide-up
 level: 3
 ---
@@ -524,6 +593,11 @@ level: 3
 - Dependency Rule: **Abhängikeiten nur von aussen gegen innen** \
   <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
 
+<!--
+- Problem: Use Cases verwenden Repositories & Services
+- Lösung: Use Case definiert Interface, Repository/Gateway implementiert es → Implementation wird via Dependency Injection dem Use Case provided (Pfeil umgekehrt)
+-->
+
 ---
 layout: quote
 transition: fade
@@ -533,12 +607,23 @@ class: text-center
 
 # Clean Architecture != Less Code
 
+<!--
+- Im Gegenteil: Sehr viel mehr Code/Boilerplate
+- Entkoppelung hat ihren Preis
+- Wie viel sind wir bereit zu «bezahlen» in unserem Projekt?
+-->
+
 ---
 transition: slide-up
 level: 3
 ---
 
 <img src="/images/clean-architecture.svg" alt="Clean Architecture" style="height: 100%; width: auto; margin: 0 auto; display: block;">
+
+<!--
+- Pragmatische Implementierung
+- Hier Clean Architecture konkret für unser Projekt
+-->
 
 ---
 transition: slide-up
@@ -585,6 +670,8 @@ level: 3
 
 # Model
 
+<img src="./images/clean-architecture-rings-entities.svg" class="rings">
+
 <<< @/snippets/model.ts
 
 ---
@@ -593,6 +680,8 @@ level: 3
 ---
 
 # Controller
+
+<img src="./images/clean-architecture-rings-adapters.svg" class="rings">
 
 <<< @/snippets/route-handler.ts
 
@@ -603,6 +692,8 @@ level: 3
 
 # Service
 
+<img src="./images/clean-architecture-rings-usecases.svg" class="rings">
+
 <<< @/snippets/service.ts
 
 ---
@@ -611,6 +702,8 @@ level: 3
 ---
 
 # Repository
+
+<img src="./images/clean-architecture-rings-adapters.svg" class="rings">
 
 <div style="transform: scale(0.8); transform-origin: top left;">
 
@@ -633,6 +726,8 @@ level: 3
 
 # Service
 
+<img src="./images/clean-architecture-rings-usecases.svg" class="rings">
+
 <<< @/snippets/service.ts {3,7,14}
 
 ---
@@ -642,9 +737,11 @@ level: 3
 
 # Repository
 
+<img src="./images/clean-architecture-rings-adapters.svg" class="rings">
+
 <div style="transform: scale(0.8); transform-origin: top left;">
 
-<<< @/snippets/repository.ts {2,14}
+<<< @/snippets/repository.ts {2,14,25}
 
 </div>
 
@@ -711,7 +808,7 @@ layout: end
 
 # Merci!
 
-Fragen? Anregungen? \
+Fragen? \
 [github.com/hupf/bernerjs-26-1](https://github.com/hupf/bernerjs-26-1)
 
 <PoweredBySlidev mt-10 />
