@@ -643,36 +643,7 @@ level: 3
 
 # Monorepo Packages & Dependencies
 
-<div style="transform: scale(0.55); transform-origin: top center;">
-
-```mermaid
-flowchart TD
-  subgraph "CORDEX"
-    client --> common
-    server --> common
-    worker --> common
-    use-cases --> common
-    db --> common
-
-    server --> use-cases
-    worker --> use-cases
-
-    use-cases --> db
-    use-cases --> storage
-
-    client -.-> |REST API| server
-    server -.-> |Graphile Worker Utils| worker
-end
-
-postgres[(Database)]
-db -.-> |Kysely| postgres
-worker -.-> |Graphile Worker| postgres
-
-s3[(Object Storage)]
-storage -.-> |Flydrive| s3
-```
-
-</div>
+<img src="./images/monorepo-packages.svg" alt="Monorepo Packages" style="height: 400px" class="mx-auto">
 
 ---
 transition: slide-up
