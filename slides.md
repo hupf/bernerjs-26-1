@@ -643,7 +643,7 @@ level: 3
 
 # Monorepo Packages & Dependencies
 
-<img src="./images/monorepo-packages.svg" alt="Monorepo Packages" style="height: 400px" class="mx-auto">
+<img src="./images/monorepo-packages.svg" alt="Monorepo Packages" style="height: 425px" class="mx-auto">
 
 ---
 transition: slide-up
