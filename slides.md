@@ -564,6 +564,11 @@ level: 2
 <!-- prettier-ignore -->
 <<< @/snippets/route-handlers/validation.ts {*}{maxHeight:'400px'}
 
+<!--
+- Das gleiche für Authorization: defineAuthEventHandler mit Rollen
+- Zusammenführen mit defineAppEventHandler
+-->
+
 ---
 transition: slide-up
 level: 2
@@ -595,6 +600,12 @@ level: 1
 
 # <div>Clean Architecture</div> <div>für <span class="highlight">pragmatische TypeScripters</span></div>
 
+<!--
+- Man hat Route Handlers → nicht die ganze Logik darin
+- Was für eine Struktur?
+- Clean Architecture bietet eine bestimmte Struktur
+-->
+
 ---
 layout: image-right
 image: ./images/clean-architecture-rings.svg
@@ -611,8 +622,9 @@ level: 2
 
 <!--
 - Kern der Software (Geschäftslogik) von technischen Details trennen
-- Domain Model & Domain Logik im Zentrum
 - Anders als Layered Architectur wo Frameworks & Drivers die Basis sind: hier ganz aussen
+- Domain Model & Domain Logik im Zentrum
+- Use Cases (Applikationslogik): Rechnung erstellen für Produkte im Warenkorb
 - Adapters Schicht zwischen neutraler Domain und Frameworks & Drivers
 - Dependency Rule
 -->
@@ -632,7 +644,7 @@ level: 2
   <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
 
 <!--
-- Problem: Use Cases verwenden Repositories & Services
+- Problem: Use Case verwendet Repositories & Services
 -->
 
 ---
@@ -650,7 +662,8 @@ level: 2
   <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
 
 <!--
-- Lösung: Use Case definiert Interface, Repository/Gateway implementiert es → Implementation wird via Dependency Injection dem Use Case provided (Pfeil umgekehrt)
+- Lösung: Dependency Inversion Principle
+- Inferfaces, DI → Pfeil umkehren
 -->
 
 ---
@@ -676,8 +689,12 @@ level: 2
 <img src="/images/clean-architecture.svg" alt="Clean Architecture" style="height: 100%; width: auto; margin: 0 auto; display: block;">
 
 <!--
-- Pragmatische Implementierung
-- Hier Clean Architecture konkret für unser Projekt
+- Business Model = Zod Schemas
+- Business Logik = Pure Functions
+- Controllers = Nitro Handlers (Request Daten auslesen → Service aufrufen)
+- Tasks = Analog zu Controllers für Graphile Worker
+- DB-Repositories (mit Kysely)
+- Storage-Repositories (mit FlyDrive)
 -->
 
 ---
@@ -720,7 +737,7 @@ level: 2
 - Controller = meistens Route Handler → wenn grösser eigene Klasse
 - Auslesen von Query Params, Request Body etc.
 - Use Case über DI
-- Custom Route Handlers: Authorization & Validierung (Type-safe!)
+- Custom Route Handlers für Authorization & Validierung
 -->
 
 ---
@@ -755,7 +772,7 @@ level: 2
 </div>
 
 <!--
-- Datenbank Zugriff mit Kysely (Type-safe SQL query builder)
+- Datenbank Zugriff mit Kysely (Type-safe SQL Query Builder)
 - `db` Instanz auch über DI injected
 -->
 
@@ -802,7 +819,7 @@ level: 2
 
 <!--
 - Kysely Types leaken nicht in andere Schichten
-- `toCamel` Type-safe von Snake Case zu Camel Case
+- `toCamel` Type-safe Mapper von Snake Case zu Camel Case
 - Verwendung von Zod Types global (auch im Frontend!)
 - Nachteil Anpassung in ganzer App wenn DB Feld ändert → Vorteil!
 -->
