@@ -620,7 +620,7 @@ level: 2
 ---
 layout: image-right
 image: ./images/clean-architecture-rings2.svg
-transition: slide-up
+transition: fade
 level: 2
 ---
 
@@ -633,6 +633,23 @@ level: 2
 
 <!--
 - Problem: Use Cases verwenden Repositories & Services
+-->
+
+---
+layout: image-right
+image: ./images/clean-architecture-rings3.svg
+transition: slide-up
+level: 2
+---
+
+# Was ist Clean Architecture?
+
+- Kombiniert Prinzipien aus _Hexagonal Architecture_ und _Onion Architecture_
+- **Separation of Concerns**
+- Dependency Rule: **Abhängikeiten nur von aussen gegen innen** \
+  <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
+
+<!--
 - Lösung: Use Case definiert Interface, Repository/Gateway implementiert es → Implementation wird via Dependency Injection dem Use Case provided (Pfeil umgekehrt)
 -->
 
@@ -668,7 +685,7 @@ transition: slide-up
 level: 2
 ---
 
-# Monorepo Packages & Dependencies
+# PNPM Workspace
 
 <img src="./images/monorepo-packages.svg" alt="Monorepo Packages" style="height: 425px" class="mx-auto">
 

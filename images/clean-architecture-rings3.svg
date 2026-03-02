@@ -24,9 +24,9 @@
      showgrid="false"
      inkscape:zoom="2.1825"
      inkscape:cx="200.45819"
-     inkscape:cy="201.14548"
+     inkscape:cy="200.68729"
      inkscape:window-width="1920"
-     inkscape:window-height="1168"
+     inkscape:window-height="1048"
      inkscape:window-x="0"
      inkscape:window-y="8"
      inkscape:window-maximized="1"
@@ -37,7 +37,7 @@
      id="defs2">
     <marker
        style="overflow:visible"
-       id="marker8"
+       id="ArrowWide"
        refX="0"
        refY="0"
        orient="auto-start-reverse"
@@ -53,7 +53,7 @@
          d="M 3,-3 0,0 3,3"
          transform="rotate(180,0.125,0)"
          sodipodi:nodetypes="ccc"
-         id="path8" />
+         id="path1" />
     </marker>
   </defs>
   <g
@@ -134,88 +134,72 @@
          y="67.161369"
          id="tspan2">Entities</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-dasharray:1.05833, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker8)"
-       d="m 55.538258,93.846777 2.18213,-4.849181"
+       style="fill:none;stroke:#000000;stroke-width:0.26458335;stroke-dasharray:1.0583334,0.26458335;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 40.384572,104.87866 60.751126,73.84391"
        id="path2"
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="88.335159"
-       y="68.210678"
-       id="text3"
-       transform="rotate(23.607382)"><tspan
+       x="80.154037"
+       y="97.323853"
+       id="text3"><tspan
          sodipodi:role="line"
-         x="88.335159"
-         y="68.210678"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'"
-         id="tspan4">Repository</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="20.543468"
-       y="124.94778"
-       id="text3-6"
-       transform="rotate(-31.854283)"><tspan
+         id="tspan7"
+         x="66.115692"
+         y="97.323853"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+           x="66.115692"
+           y="97.323853"
+           id="tspan3">Repositories</tspan></tspan><tspan
          sodipodi:role="line"
-         id="tspan8-3"
-         x="20.543468"
-         y="124.94778"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'">Gateway</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-dasharray:1.05833, 0.264583;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker8)"
-       d="M 81.396347,91.785875 78.001922,87.90653"
-       id="path9"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="88.582062"
-       y="81.43605"
-       id="text9"
-       transform="rotate(23.607382)"><tspan
-         sodipodi:role="line"
-         x="88.582062"
-         y="81.43605"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#ffffff;fill-opacity:1"
-         id="tspan9">Database</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="20.993418"
-       y="138.41074"
-       id="text10"
-       transform="rotate(-31.854283)"><tspan
-         sodipodi:role="line"
-         id="tspan10"
-         x="20.993418"
-         y="138.41074"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#ffffff;fill-opacity:1">Billing API</tspan></text>
+         id="tspan8"
+         x="66.115692"
+         y="101.85619"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light'">&amp; Gateways</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="66.115692"
-       y="85.15303"
-       id="text11"><tspan
-         sodipodi:role="line"
-         id="tspan13"
+       y="90.973862"
+       id="text9"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="66.115692"
-         y="85.15303" /></text>
+         y="90.973862"
+         id="tspan9">Interfaces</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="66.947807"
-       y="83.4133"
-       id="text17"><tspan
-         sodipodi:role="line"
-         x="66.947807"
-         y="83.4133"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#000000;fill-opacity:1"
-         id="tspan18">Create bill for</tspan><tspan
-         sodipodi:role="line"
-         x="66.947807"
-         y="87.945633"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:'Roboto Light';fill:#000000;fill-opacity:1"
-         id="tspan19">products in cart</tspan></text>
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-23.552959"
+       y="102.4377"
+       id="text10"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-23.552959"
+         y="102.4377"
+         id="tspan10">Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-23.231373"
+       y="115.69472"
+       id="text11"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-23.231373"
+         y="115.69472"
+         id="tspan11">Model</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="-22.645205"
+       y="129.40996"
+       id="text12"
+       transform="rotate(-60)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="-22.645205"
+         y="129.40996"
+         id="tspan12">Model</tspan></text>
   </g>
 </svg>
