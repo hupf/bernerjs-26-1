@@ -16,6 +16,11 @@ transition: slide-left
 mdc: true
 # duration of the presentation
 duration: 35min
+monacoTypesAdditionalPackages:
+  - zod
+  - h3
+level: 1
+hideInToc: true
 ---
 
 # Moderne TypeScript-Backends <span class="highlight">mit Nitro & Clean Architecture</span>
@@ -27,6 +32,7 @@ hofer@puzzle.ch
 ---
 layout: center
 transition: slide-up
+level: 2
 ---
 
 <img src="./images/Wappen_Aargau_matt.svg" alt="Wappen Aargau" style="width: 400px; height: 400px;">
@@ -38,7 +44,7 @@ transition: slide-up
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <img src="./images/edk.svg" class="mx-auto mt-18" style="height: 110px;">
@@ -53,7 +59,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <img src="./images/schulabkommen-aktuell.png" class="mx-auto" style="max-height: 100%">
@@ -68,7 +74,7 @@ Aktuelle Situation:
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Applikation: CORDEX
@@ -98,7 +104,7 @@ Applikation für Kanton Aargau entwickelt:
 ---
 layout: center
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <img src="./images/pmpc_logo_horizontal.jpg" alt="Public Money Public Code">
@@ -115,7 +121,7 @@ level: 3
 ---
 layout: meet
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nice to meet you
@@ -146,16 +152,17 @@ hofer@puzzle.ch
 ---
 layout: agenda
 transition: slide-left
+level: 2
 ---
 
 # Agenda
 
-<Toc minDepth="2" maxDepth="2" />
+<Toc maxDepth="1" />
 
 ---
 layout: intro
 transition: slide-up
-level: 2
+level: 1
 ---
 
 # REST Backend <span class="highlight">mit Nitro</span>
@@ -166,7 +173,7 @@ level: 2
 
 ---
 transition: slide-up
-level: 3
+level: 2
 hide: true
 ---
 
@@ -210,7 +217,7 @@ frontend -- "Link" --> ers
 ---
 layout: center
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Was für eine Architektur?
@@ -221,7 +228,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Wieso SPA + REST API?
@@ -296,7 +303,7 @@ level: 3
 ---
 layout: full
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <img src="./images/frameworks-wordcloud.svg" class="mx-auto" style="height: 100%">
@@ -311,7 +318,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 hide: true
 ---
 
@@ -380,7 +387,7 @@ hide: true
 layout: iframe-right
 url: https://nitro.build/
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nitro
@@ -403,7 +410,7 @@ https://nitro.build/
 layout: iframe-right
 url: https://unjs.io/relations?u[]=automd&u[]=bundle-runner&u[]=c12&u[]=changelogen&u[]=citty&u[]=confbox&u[]=consola&u[]=cookie-es&u[]=crossws&u[]=db0&u[]=defu&u[]=destr&u[]=fontaine&u[]=fs-memo&u[]=get-port-please&u[]=giget&u[]=h3&u[]=hookable&u[]=httpxy&u[]=image-meta&u[]=ipx&u[]=jimp-compact&u[]=jiti&u[]=knitwork&u[]=listhen&u[]=magic-regexp&u[]=magicast&u[]=mdbox&u[]=mkdist&u[]=mlly&u[]=mongoz&u[]=nanotar&u[]=nitropack&u[]=node-fetch-native&u[]=nypm&u[]=ofetch&u[]=ohash&u[]=pathe&u[]=perfect-debounce&u[]=pkg-types&u[]=radix3&u[]=rc9&u[]=scule&u[]=serve-placeholder&u[]=std-env&u[]=theme-colors&u[]=ufo&u[]=unbuild&u[]=uncrypto&u[]=unctx&u[]=undocs&u[]=unenv&u[]=unhead&u[]=unimport&u[]=unpdf&u[]=unplugin&u[]=unstorage&u[]=untun&u[]=untyped&u[]=unwasm&u[]=uqr&u[]=webpackbar&showDependencies=false&showDevDependencies=false&showChildren=false
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nitro, Nuxt und das UnJS Ökosystem
@@ -425,7 +432,7 @@ Nuxt(-Labs), Nitro (und Pooya Parsa) [von Vercel übernommen](ttps://vercel.com/
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nitro/H3 als Basis für Meta Frameworks
@@ -490,7 +497,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nitro Build
@@ -506,12 +513,12 @@ $ node .output/server/index.mjs
 ```
 
 → 🚀 `.output/` Directory in einen Node Container kopieren und los... \
-→ ⚡️ Schnelle Cold Starts \
-→ 😃 Keine `node_modules` in der Produktion!
+→ 😃 Keine `node_modules` in der Produktion! \
+→ ⚡️ Schnelle Cold Starts
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Nitro Runtime Features
@@ -528,7 +535,7 @@ Experimental:
 - OpenAPI <span class="opacity-50">– Swagger-basierte API Doku</span>
 
 ---
-level: 3
+level: 2
 transition: slide-up
 ---
 
@@ -548,9 +555,28 @@ export default defineEventHandler((event) => {
 → Use can use function composition!
 
 ---
+transition: slide-up
+level: 2
+---
+
+# Validation Route Handler
+
+<!-- prettier-ignore -->
+<<< @/snippets/route-handlers/validation.ts {*}{maxHeight:'400px'}
+
+---
+transition: slide-up
+level: 2
+---
+
+# Validation Route Handler Usage
+
+<<< @/snippets/route-handlers/example.ts {monaco} {height: '400px'}
+
+---
 layout: iframe-right
 url: https://v3.nitro.build/
-level: 3
+level: 2
 ---
 
 # Nitro v3
@@ -564,7 +590,7 @@ level: 3
 ---
 layout: intro
 transition: slide-up
-level: 2
+level: 1
 ---
 
 # <div>Clean Architecture</div> <div>für <span class="highlight">pragmatische TypeScripters</span></div>
@@ -573,7 +599,7 @@ level: 2
 layout: image-right
 image: ./images/clean-architecture-rings.svg
 transition: fade
-level: 3
+level: 2
 ---
 
 # Was ist Clean Architecture?
@@ -584,6 +610,7 @@ level: 3
   <span class="opacity-50">→ Dependency Inversion Principle (DIP)</span>
 
 <!--
+- Kern der Software (Geschäftslogik) von technischen Details trennen
 - Domain Model & Domain Logik im Zentrum
 - Anders als Layered Architectur wo Frameworks & Drivers die Basis sind: hier ganz aussen
 - Adapters Schicht zwischen neutraler Domain und Frameworks & Drivers
@@ -594,7 +621,7 @@ level: 3
 layout: image-right
 image: ./images/clean-architecture-rings2.svg
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Was ist Clean Architecture?
@@ -612,7 +639,7 @@ level: 3
 ---
 layout: quote
 transition: fade
-level: 3
+level: 2
 class: text-center
 ---
 
@@ -626,7 +653,7 @@ class: text-center
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <img src="/images/clean-architecture.svg" alt="Clean Architecture" style="height: 100%; width: auto; margin: 0 auto; display: block;">
@@ -638,7 +665,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Monorepo Packages & Dependencies
@@ -647,7 +674,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Model
@@ -663,7 +690,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Controller
@@ -681,7 +708,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Service
@@ -697,7 +724,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Repository
@@ -718,14 +745,14 @@ level: 3
 ---
 layout: quote
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Moment mal...
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Service
@@ -743,7 +770,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 # Repository
@@ -765,7 +792,7 @@ level: 3
 
 ---
 transition: slide-up
-level: 3
+level: 2
 ---
 
 <div style="transform: scale(0.7); transform-origin: top center;">
@@ -797,7 +824,7 @@ mindmap
 ---
 layout: quote
 transition: fade
-level: 3
+level: 2
 class: text-center
 ---
 
@@ -811,7 +838,7 @@ class: text-center
 ---
 layout: quote
 transition: fade
-level: 3
+level: 2
 class: text-center
 ---
 
@@ -819,7 +846,7 @@ class: text-center
 
 ---
 layout: quote
-level: 3
+level: 2
 class: text-center
 ---
 
@@ -833,6 +860,7 @@ class: text-center
 
 ---
 layout: end
+hideInToc: true
 ---
 
 # Merci!
