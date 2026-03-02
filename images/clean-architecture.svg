@@ -24,9 +24,9 @@
      showgrid="false"
      inkscape:zoom="2.1825"
      inkscape:cx="200.45819"
-     inkscape:cy="206.18557"
+     inkscape:cy="206.64376"
      inkscape:window-width="1920"
-     inkscape:window-height="1048"
+     inkscape:window-height="1168"
      inkscape:window-x="0"
      inkscape:window-y="8"
      inkscape:window-maximized="1"
@@ -162,24 +162,24 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="87.170425"
-       y="17.658112"
-       id="text40927"
-       transform="rotate(63.403776)"><tspan
+       x="87.976112"
+       y="19.952543"
+       id="text40927-6"
+       transform="rotate(60.098298)"><tspan
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="87.170425"
-         y="17.658112"
-         id="tspan40925">Postgres</tspan></text>
+         x="87.976112"
+         y="19.952543"
+         id="tspan40925-7">Kysely</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="89.610458"
-       y="77.420761"
+       x="94.408173"
+       y="67.794197"
        id="text41739"
-       transform="rotate(26.333496)"><tspan
+       transform="rotate(34.326311)"><tspan
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="89.610458"
-         y="77.420761"
+         x="94.408173"
+         y="67.794197"
          id="tspan41737">S3</tspan></text>
     <text
        xml:space="preserve"
@@ -219,5 +219,27 @@
          x="66.083824"
          y="36.133659"
          id="tspan35">(Route Handlers)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="87.954514"
+       y="25.645555"
+       id="text1"
+       transform="rotate(60.098298)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="87.954514"
+         y="25.645555"
+         id="tspan1">Postgres</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="94.619026"
+       y="62.350163"
+       id="text2"
+       transform="rotate(34.326311)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:3.52778px;font-family:Roboto;-inkscape-font-specification:'Roboto Light';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="94.619026"
+         y="62.350163"
+         id="tspan2">FlyDrive</tspan></text>
   </g>
 </svg>
